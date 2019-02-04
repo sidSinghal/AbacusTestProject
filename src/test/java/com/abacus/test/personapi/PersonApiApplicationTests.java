@@ -34,7 +34,7 @@ public class PersonApiApplicationTests {
     @Test
     public void verifyAllPersonList() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get("/test/persons").accept(MediaType.APPLICATION_JSON))
-                .andExpect(jsonPath("$", hasSize(5))).andDo(print());
+                .andExpect(jsonPath("$", hasSize(6))).andDo(print());
     }
 
     @Test
