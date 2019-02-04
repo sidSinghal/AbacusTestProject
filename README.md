@@ -45,8 +45,11 @@ The Actuator library provided by Spring Boot can expose metrics under /actuator/
 
 ## UML Diagrams
 ### Class Diagram
-![](https://github.com/sidSinghal/AbacusTestProject/tree/master/diagrams/ClassDiagram.JPG?raw=true, "Class Diagram")
+![](https://github.com/sidSinghal/AbacusTestProject/blob/master/diagrams/ClassDiagram.JPG)
 
 ### Sequence Diagrams
 #### GetPersonById
 ![](https://github.com/sidSinghal/AbacusTestProject/blob/master/diagrams/GetPersonById.png)
+
+#### DeletePerson
+![](https://github.com/sidSinghal/AbacusTestProject/blob/master/diagrams/DeletePerson.png)
