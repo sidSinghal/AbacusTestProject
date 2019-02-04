@@ -1,5 +1,26 @@
 # AbacusTestProject
 
+## Steps to run the project
+1. Clone the git repository on the local system
+2. Create MySQL database using the database.sql file in the /resources directory
+3. Navigate to the project folder and open terminal
+4. Run "mvn spring-boot:run" command
+5. Launch Postman app and hit the endpoints: 
+    * Get: http://localhost:8080/test/persons/{id}
+    * Put: http://localhost:8080/test/persons/{id}
+    * Delete: http://localhost:8080/test/persons/{id}
+    * Post: http://localhost:8080/test/persons
+
+## Deployment (jar vs war)
+A JAR is a Java Archive, it is used to aggregate multiple files into a single file. A JAR file would consist of Java classes and EJB modules. It allows JRE to deploy entire application including the classes and the associated resources.
+
+A WAR file is a Web Application Archive, it is specifically used for web applications. A WAR file would only contain files related to web application. It allows testing and deploying web applications easily, and it contains servlet, JSP, XML, CSS, and JavaScript files.
+
+Not all the servers deploy a .jar file for a web application. Spring Boot comes with an embedded Tomcat server which can deploy both kinds of file. 
+
+## Deploying application on server (tomcat)
+Spring Boot provides a standalone application and comes with many embedded tools. It has an embedded Tomcat server which deploys the application on its own, we just have to run the command "mvn spring-boot:run". To build a deployment file run "mvn clean install" and it would generate a WAR or a JAR file as specified in the pom.xml file. Once a file is generated, just move it to tomcat or any server's /webapps folder and start the server and launch URL, the application will work.  
+
 ## Securing API endpoints
 Securing the endpoint is extremely important in the production environment as our whole business would depend on it. The best way to secure the endpoints are
 * Using HTTPS: Data could be easily stolen by man-in-the-middle-attack if unsecured transfer protocol is, like HTTP, is used. Getting a TSL certificate to make the endpoints secure would avoid those attacks.
