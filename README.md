@@ -49,4 +49,4 @@ The Actuator library provided by Spring Boot can expose metrics under /actuator/
 
 ### Sequence Diagrams
 #### GetPersonById
-![](https://github.com/sidSinghal/AbacusTestProject/tree/master/diagrams/GetPersonById.png?ray=true)
+![](https://github.com/sidSinghal/AbacusTestProject/blob/master/diagrams/GetPersonById.png)
