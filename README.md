@@ -42,3 +42,11 @@ The Actuator library provided by Spring Boot can expose metrics under /actuator/
 * Enabling a discovery server, like Eureka. To add this we would need to Eureka dependency in pom.xml and enable it.
 * The next step would be to create a Jenkins pipeline and integrate it with Eureka. It will provide Jenkins with a list of all the instances and the URL.
 * By integrating Jenkins with Spring Boot Actuator, it would allow us to access all the metrics exposed by it and we can create a script to scale it up or down based on the number of requests.
+
+## UML Diagrams
+### Class Diagram
+![alt text](https://github.com/sidSinghal/AbacusTestProject/tree/master/diagrams/ClassDiagram.JPG)
+
+### Sequence Diagrams
+#### GetPersonById
+![alt text](https://github.com/sidSinghal/AbacusTestProject/tree/master/diagrams/GetPersonById.png)
